@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://politicsphilosophy.com/sitemap.xml
+Sitemap: https://polisphilo.com/sitemap.xml
