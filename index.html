@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#080b18">
 
 <link rel="canonical" href="https://polisphilo.com/">
 
@@ -20,14 +21,18 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Politics &amp; Philosophy: the political philosophy Discord.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@polisphilo">
 <meta name="twitter:title" content="Political Philosophy Discord | Politics &amp; Philosophy">
 <meta name="twitter:description" content="Civil, good-faith discussion of political philosophy, ideology, geopolitics and European politics. 1,100+ members, not an echo chamber.">
 <meta name="twitter:image" content="https://polisphilo.com/og.png">
 <meta name="twitter:image:alt" content="Politics &amp; Philosophy: the political philosophy Discord.">
 
 <link rel="preconnect" href="https://discord.com">
+<link rel="preload" as="image" href="/hero-bg.jpg" fetchpriority="high">
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.className += ' js';</script>
+<script src="/app.js" defer></script>
 
 <script type="application/ld+json">
 {
@@ -40,6 +45,7 @@
       "alternateName": "P&P",
       "url": "https://polisphilo.com/",
       "logo": "https://polisphilo.com/logo.png",
+      "image": "https://polisphilo.com/og.png",
       "description": "A free-speech Discord community for political philosophy, geopolitics and European politics.",
       "sameAs": [
         "https://discord.com/invite/politics-philosophy-553617191358955520",
@@ -54,7 +60,7 @@
         "https://www.youtube.com/@polisphilo",
         "https://polisphilo.com/"
       ],
-      "knowsAbout": ["Political philosophy", "Geopolitics", "European politics", "History of political thought", "Socratic method", "Political theory"]
+      "knowsAbout": ["Political philosophy", "Geopolitics", "European politics", "History of political thought", "Socratic method", "Political theory", "Ethics"]
     },
     {
       "@type": "WebSite",
@@ -65,13 +71,14 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"What is the Politics & Philosophy Discord server?","acceptedAnswer":{"@type":"Answer","text":"A free-speech Discord community of 1,100+ members for political philosophy, ethics, ideology, geopolitics and European politics, through a fast text floor, live voice chats, and a book club."}},
-        {"@type":"Question","name":"Is it free to join?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free. Click a join link, complete the short onboarding, and you are in."}},
-        {"@type":"Question","name":"Do I need to be an expert in philosophy?","acceptedAnswer":{"@type":"Answer","text":"No. Members range from curious newcomers to the well-read. Good-faith interest matters more than credentials."}},
-        {"@type":"Question","name":"What can I discuss?","acceptedAnswer":{"@type":"Answer","text":"Political philosophy, ethics, ideology, Marxism, liberalism and conservatism, geopolitics, current events, European politics, history, and religion."}},
-        {"@type":"Question","name":"How active are the voice chats?","acceptedAnswer":{"@type":"Answer","text":"Voice channels run most nights, with open conversations on ethics, ideology and current events that carry over into text. The live count is on the widget above."}},
-        {"@type":"Question","name":"How do the ranks work?","acceptedAnswer":{"@type":"Answer","text":"You climb a tenure-gated ladder by showing up and contributing over time, not by grinding messages, so ranks reflect real participation."}},
-        {"@type":"Question","name":"Is it a left-wing or right-wing server?","acceptedAnswer":{"@type":"Answer","text":"Neither by rule. It leans free-speech and European and hosts the full spectrum. The point is to think through positions in good faith, not to enforce one."}}
+        {"@type":"Question","name":"What is the Politics & Philosophy Discord server?","acceptedAnswer":{"@type":"Answer","text":"A free-speech Discord community of 1,100+ members for political philosophy, ethics, ideology, geopolitics and European politics, across a fast text floor, live voice chats and a book club."}},
+        {"@type":"Question","name":"Is it free to join?","acceptedAnswer":{"@type":"Answer","text":"Yes, completely free. Click a join link, finish the short onboarding, and you are in."}},
+        {"@type":"Question","name":"Do I need to be an expert in philosophy?","acceptedAnswer":{"@type":"Answer","text":"No. Members range from curious newcomers to the very well read. Good faith matters more than credentials."}},
+        {"@type":"Question","name":"What can I discuss?","acceptedAnswer":{"@type":"Answer","text":"Political philosophy, ethics, ideology, Marxism, liberalism and conservatism, geopolitics, current events, European politics, history and religion."}},
+        {"@type":"Question","name":"Can I make my own voice channel?","acceptedAnswer":{"@type":"Answer","text":"Yes. Any member can open a voice room and run it: rename it, cap the size, lock it, mute, kick or ban, and hand it to someone else. Fifteen commands, no moderator required."}},
+        {"@type":"Question","name":"How active are the voice chats?","acceptedAnswer":{"@type":"Answer","text":"Voice runs most nights, on ethics, ideology and current events, and the conversation carries into text afterwards. The live count is on the widget above."}},
+        {"@type":"Question","name":"How do the ranks work?","acceptedAnswer":{"@type":"Answer","text":"You climb a tenure-gated ladder by showing up and contributing over time, not by grinding messages, so a rank reflects real participation."}},
+        {"@type":"Question","name":"Is it a left-wing or right-wing server?","acceptedAnswer":{"@type":"Answer","text":"Neither by rule. It leans free-speech and European and hosts the full spectrum. The point is to think a position through in good faith, not to enforce one."}}
       ]
     }
   ]
@@ -80,82 +87,176 @@
 </head>
 <body>
 
-<header class="hero">
-  <nav class="nav">
-    <span class="brand"><img src="/mark.png" alt="" width="24" height="24" style="vertical-align:-6px;border-radius:50%"> Politics &amp; Philosophy</span>
-    <span class="site-links">
+<nav class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="/"><img src="/mark.png" alt="" width="28" height="28"> <span>Politics <em>&amp;</em> Philosophy</span></a>
+    <div class="site-links">
       <a href="/geopolitics-discord/">Geopolitics</a>
       <a href="/european-politics-discord/">European politics</a>
       <a href="/book-club/">Book club</a>
       <a href="/civil-discussion/">Civil discussion</a>
       <a class="btn btn-sm" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Join</a>
-    </span>
-  </nav>
+    </div>
+  </div>
+  <span class="progress"></span>
+</nav>
+
+<header class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="hero-inner">
-    <h1>Political Philosophy Discord</h1>
-    <p class="lede">Politics &amp; Philosophy is a political philosophy Discord server of
-      <strong>1,100+ members</strong> for civil, good-faith discussion and debate on ethics, ideology,
-      geopolitics and European politics. Free speech, <strong>not an echo chamber</strong>, in text, a
-      book club, and live voice.</p>
-    <div class="cta-row">
+    <p class="eyebrow"><span class="dot"></span> Free speech, not an echo chamber</p>
+    <h1>Political Philosophy <span class="grad">Discord</span></h1>
+    <p class="lede">A politics and philosophy Discord server of <strong>1,100+ members</strong> arguing in
+      good faith about ethics, ideology, geopolitics and European politics. Text, live voice, and a book club.</p>
+    <p class="microcopy" style="margin-top:0">Tonight someone is arguing about
+      <span class="rot"><span>borders</span><span>free will</span><span>the EU</span><span>Marx</span><span>just war</span><span>free speech</span></span>
+    </p>
+    <div class="cta-row" style="margin-top:26px">
       <a class="btn btn-lg" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Join the Discord</a>
-      <a class="btn btn-lg btn-ghost" href="#discuss" rel="noopener">What we discuss</a>
+      <a class="btn btn-lg btn-ghost" href="#discuss">What we discuss</a>
     </div>
     <p class="microcopy">Free to join · Invite: <a class="invite" href="https://discord.gg/RZgT4HBjCR" rel="noopener">discord.gg/RZgT4HBjCR</a></p>
+
+    <div class="stats" data-stagger>
+      <div class="stat" data-reveal><b data-count="1100" data-suffix="+">1,100+</b><span>members</span></div>
+      <div class="stat" data-reveal><b data-count="90" data-suffix="+">90+</b><span>online most nights</span></div>
+      <div class="stat" data-reveal><b>Nightly</b><span>voice discussion</span></div>
+      <div class="stat" data-reveal><b>2019</b><span>running since</span></div>
+    </div>
   </div>
 </header>
 
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <ul>
+      <li>Political philosophy</li><li>Geopolitics</li><li>European politics</li><li>Ethics</li>
+      <li>Liberalism</li><li>Conservatism</li><li>Marxism</li><li>Anarchism</li><li>Free speech</li>
+      <li>Socratic discussion</li><li>Book club</li><li>Voice debate</li><li>Rawls</li><li>Hobbes</li>
+      <li>Mill</li><li>Machiavelli</li><li>Nietzsche</li><li>Just war</li><li>Sovereignty</li>
+    </ul>
+  </div>
+</div>
+
 <main>
   <section class="band">
-    <h2>A serious home for politics and philosophy</h2>
-    <p>Most large Discord servers drown real discussion in noise. <strong>Politics &amp; Philosophy</strong> is
-      built for the opposite: a place where you can actually think out loud. We are a free-speech,
-      European-leaning community where liberals, conservatives, socialists, traditionalists and the genuinely
-      undecided make their case in good faith and are expected to back it up.</p>
-    <p>Whether you want to dissect Kant, litigate the ethics of a current war, trace the roots of a modern ideology,
-      or just ask an honest question about a text you are reading, there is a channel and a person ready to engage.</p>
-    <p>If you have been looking for a political philosophy Discord where the arguments are serious and the
-      moderation is fair, this is it. Grab the invite at
-      <a class="invite" href="https://discord.gg/RZgT4HBjCR" rel="noopener">discord.gg/RZgT4HBjCR</a> and jump in.</p>
+    <div class="split tight">
+      <div class="band-head" data-reveal>
+        <span class="kicker">The server</span>
+        <h2>Not another shouting match</h2>
+        <p class="lead-sm">Most large politics Discords drown discussion in noise. <strong>Politics &amp; Philosophy</strong>
+          is built the other way round: a free-speech, European-leaning community where liberals, conservatives,
+          socialists, traditionalists and the genuinely undecided make a case and get asked to back it up.</p>
+        <p>Dissect Kant, litigate the ethics of a war, trace an ideology to its roots, or just ask an honest question
+          about the book you are reading. Someone will engage. Invite:
+          <a class="invite" href="https://discord.gg/RZgT4HBjCR" rel="noopener">discord.gg/RZgT4HBjCR</a></p>
+      </div>
+      <figure class="quote" data-reveal>
+        <blockquote>He who knows only his own side of the case, knows little of that.</blockquote>
+        <figcaption>John Stuart Mill, <cite>On Liberty</cite>, 1859. The closest thing we have to a house rule.</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="band alt" id="discuss">
-    <h2>What people discuss here</h2>
-    <div class="grid">
-      <div class="card"><h3>Political philosophy</h3><p>Liberalism, conservatism, Marxism, anarchism, the social contract, justice, rights and the state.</p></div>
-      <div class="card"><h3>Ethics &amp; ideas</h3><p>Moral philosophy, metaethics, free will, religion vs atheism, and the questions that never fully close.</p></div>
-      <div class="card"><h3><a href="/geopolitics-discord/">Geopolitics</a></h3><p>Serious discussion and analysis, not roleplay: great-power competition, war and diplomacy, migration, and the forces reshaping the map.</p></div>
-      <div class="card"><h3><a href="/european-politics-discord/">European politics</a></h3><p>The EU, national movements, tradition and modernity, and where the continent is headed.</p></div>
-      <div class="card"><h3><a href="/civil-discussion/">Discussion &amp; voice</a></h3><p>Thoughtful live conversations in voice, plus a fast-moving text floor. Ideas over point-scoring.</p></div>
-      <div class="card"><h3><a href="/book-club/">Book club</a></h3><p>A rotating reading circle for the works worth discussing, from the ancients to the moderns.</p></div>
+    <div data-reveal><span class="kicker">Channels</span><h2>What people discuss here</h2></div>
+    <div class="grid" data-stagger>
+      <div class="card" data-reveal><span class="ic">🏛️</span><h3>Political philosophy</h3><p>Liberalism, conservatism, Marxism, anarchism, the social contract, justice, rights and the state.</p></div>
+      <div class="card" data-reveal><span class="ic">⚖️</span><h3>Ethics &amp; ideas</h3><p>Moral philosophy, metaethics, free will, religion against atheism, and the questions that never fully close.</p></div>
+      <div class="card" data-reveal><span class="ic">🌍</span><h3><a href="/geopolitics-discord/">Geopolitics</a></h3><p>Great-power competition, war and diplomacy, migration, the forces redrawing the map. Analysis, not roleplay.</p></div>
+      <div class="card" data-reveal><span class="ic">🇪🇺</span><h3><a href="/european-politics-discord/">European politics</a></h3><p>The EU, national movements, tradition against modernity, and where the continent is headed.</p></div>
+      <div class="card" data-reveal><span class="ic">🎙️</span><h3><a href="/civil-discussion/">Discussion &amp; voice</a></h3><p>Live voice most nights plus a fast text floor. Ideas over point-scoring.</p></div>
+      <div class="card" data-reveal><span class="ic">📚</span><h3><a href="/book-club/">Book club</a></h3><p>A rotating reading circle for the works worth arguing over, from the ancients to the moderns.</p></div>
+    </div>
+  </section>
+
+  <section class="band" id="rooms">
+    <div class="split">
+      <div data-reveal>
+        <span class="kicker">Room management</span>
+        <h2>Your room.<br><span class="grad">Your rules.</span></h2>
+        <p>Open a voice room and it is yours. Rename it, cap the size, lock the door, mute a troll, hand it over when
+          you leave. Our own bot puts the controls in every member's hands, so a conversation never waits on a moderator.</p>
+        <div style="margin-top:26px">
+          <div class="feature"><img src="/img/room-privacy.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <div><h3>Privacy first</h3><p>Lock it down. Control who sees, joins and speaks.</p></div></div>
+          <div class="feature"><img src="/img/room-voice.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <div><h3>Autonomy</h3><p>Spin up a voice chat, set permissions, shape your own corner of the server.</p></div></div>
+          <div class="feature"><img src="/img/room-mod.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+            <div><h3>Moderate your way</h3><p>Real moderation tools, handed to the person hosting the conversation.</p></div></div>
+        </div>
+      </div>
+      <div class="panel" data-reveal>
+        <div class="chipgrid" data-stagger>
+          <span class="chip" data-reveal><span class="g">📝</span><span><span class="s">/</span>rename</span></span>
+          <span class="chip" data-reveal><span class="g">💬</span><span><span class="s">/</span>status</span></span>
+          <span class="chip" data-reveal><span class="g">👥</span><span><span class="s">/</span>size</span></span>
+          <span class="chip hot" data-reveal><span class="g">🔒</span><span><span class="s">/</span>lock</span></span>
+          <span class="chip hot" data-reveal><span class="g">🎙️</span><span><span class="s">/</span>voice</span></span>
+          <span class="chip hot" data-reveal><span class="g">🔞</span><span><span class="s">/</span>minors</span></span>
+          <span class="chip hot" data-reveal><span class="g">🔨</span><span><span class="s">/</span>ban</span></span>
+          <span class="chip" data-reveal><span class="g">♻️</span><span><span class="s">/</span>unban</span></span>
+          <span class="chip hot" data-reveal><span class="g">🥾</span><span><span class="s">/</span>kick</span></span>
+          <span class="chip" data-reveal><span class="g">📋</span><span><span class="s">/</span>bans</span></span>
+          <span class="chip" data-reveal><span class="g">🛡️</span><span><span class="s">/</span>mod</span></span>
+          <span class="chip hot" data-reveal><span class="g">🤫</span><span><span class="s">/</span>hush</span></span>
+          <span class="chip" data-reveal><span class="g">👑</span><span><span class="s">/</span>claim</span></span>
+          <span class="chip" data-reveal><span class="g">➡️</span><span><span class="s">/</span>transfer</span></span>
+          <span class="chip hot" data-reveal><span class="g">🏳️</span><span><span class="s">/</span>abandon</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band alt" id="forum">
+    <div class="band-head" data-reveal>
+      <span class="kicker">Philosophy forum</span>
+      <h2>The questions people actually argue about</h2>
+      <p>A sample of the threads that run in the forum. Pick one up, or post your own.</p>
+    </div>
+    <ul class="threads" data-stagger>
+      <li class="thread" data-reveal><img src="/img/topic-borders.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <div><span class="tag">Ethics</span><h3>Do borders have any moral justification?</h3><p>Sovereignty, freedom of movement, and who gets to decide.</p></div></li>
+      <li class="thread" data-reveal><img src="/img/topic-world.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <div><span class="tag">Global ethics</span><h3>What do we owe to strangers on the other side of the world?</h3><p>Moral obligation in an interconnected world.</p></div></li>
+      <li class="thread" data-reveal><img src="/img/topic-society.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <div><span class="tag">Society</span><h3>Individual responsibility or collective support?</h3><p>Which one actually solves our social and economic problems.</p></div></li>
+      <li class="thread" data-reveal><img src="/img/topic-speech.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <div><span class="tag">Free speech</span><h3>Should we talk to people with extreme views instead of silencing them?</h3><p>Is dialogue always better than refusal, and where is the line.</p></div></li>
+      <li class="thread" data-reveal><img src="/img/topic-identity.webp" alt="" width="56" height="56" loading="lazy" decoding="async">
+        <div><span class="tag">Politics</span><h3>Can the Proteus effect shape political behaviour?</h3><p>How identity and perception change the way we engage in politics.</p></div></li>
+    </ul>
+    <div class="forum-cta" data-reveal>
+      <p>Share ideas. Challenge perspectives.<small>Free to join, and the thread is already open.</small></p>
+      <a class="btn" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Start a discussion</a>
     </div>
   </section>
 
   <section class="band">
-    <h2>Why members stay</h2>
-    <ul class="checks">
-      <li><strong>Real discussion, moderated fairly.</strong> Free expression with a floor: no spam, no raids, arguments over insults.</li>
-      <li><strong>Active every day.</strong> A live text channel, regular voice calls, a book club, and a daily news desk.</li>
-      <li><strong>Ranks that mean something.</strong> Earn your way up a tenure-gated ladder by actually showing up and contributing.</li>
-      <li><strong>Small enough to matter.</strong> You will be recognised, not lost in a 50,000-member firehose.</li>
+    <div data-reveal><span class="kicker">Why members stay</span><h2>Built to be worth returning to</h2></div>
+    <ul class="checks" data-stagger>
+      <li data-reveal><strong>Moderated on conduct, not opinion.</strong> No spam, no raids, arguments instead of insults. Your conclusions are your own business.</li>
+      <li data-reveal><strong>Something on every night.</strong> A live text floor, voice most evenings, a daily news desk and a running book club.</li>
+      <li data-reveal><strong>Ranks you earn.</strong> A tenure-gated ladder that rewards showing up over months, not grinding messages.</li>
+      <li data-reveal><strong>Small enough to be recognised.</strong> 1,100 members, not a 50,000-member firehose where you are a username.</li>
     </ul>
-    <div class="cta-row"><a class="btn btn-lg" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Join the discussion</a></div>
+    <div class="cta-row" data-reveal><a class="btn btn-lg" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Join the discussion</a></div>
   </section>
 
-  <section class="band" id="join-live">
-    <h2>See who is online right now</h2>
-    <p>A live look at the Politics &amp; Philosophy Discord. Jump into a voice channel or the text floor and make your case.</p>
-    <div style="display:flex;justify-content:center;min-height:500px;margin:1.25rem 0">
-      <iframe src="https://discord.com/widget?id=553617191358955520&amp;theme=dark" width="350" height="500" style="max-width:100%;border:0;border-radius:14px" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Politics &amp; Philosophy live Discord widget" loading="lazy"></iframe>
+  <section class="band alt" id="join-live">
+    <div class="band-head" data-reveal><span class="kicker">Live</span><h2>See who is online right now</h2>
+      <p>A live look at the Politics &amp; Philosophy Discord. Drop into a voice channel or the text floor and make your case.</p></div>
+    <div class="widget-wrap" data-reveal>
+      <iframe src="https://discord.com/widget?id=553617191358955520&amp;theme=dark" width="350" height="500" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Politics &amp; Philosophy live Discord widget" loading="lazy"></iframe>
     </div>
-    <div class="cta-row"><a class="btn btn-lg" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Join the Discord</a></div>
+    <div class="cta-row" data-reveal><a class="btn btn-lg" href="https://discord.gg/RZgT4HBjCR" rel="noopener">Join the Discord</a></div>
   </section>
 
-  <section class="band alt" id="directory">
-    <h2>Best political philosophy &amp; politics Discord servers</h2>
-    <p>Looking for a serious community to think with? Start with ours. If you run a good-faith politics or
-      philosophy server and would like to be listed here, reach out inside the Discord.</p>
-    <ol class="servers">
+  <section class="band" id="directory">
+    <div class="band-head" data-reveal><span class="kicker">Directory</span>
+      <h2>Best political philosophy and politics Discord servers</h2>
+      <p>Looking for a serious community to think with? Start with ours. If you run a good-faith politics or philosophy
+        server and want to be listed here, reach out inside the Discord.</p></div>
+    <ol class="servers" data-reveal>
       <li class="server featured">
         <div><h3>Politics &amp; Philosophy <span class="tag">Featured</span></h3>
           <p>Free-speech discussion of political philosophy, ethics, geopolitics and European politics. 1,100+ members, book club, live voice.</p></div>
@@ -164,15 +265,18 @@
     </ol>
   </section>
 
-  <section class="band" id="faq">
-    <h2>Frequently asked questions</h2>
-    <details><summary>What is the Politics &amp; Philosophy Discord server?</summary><p>A free-speech Discord community of 1,100+ members for political philosophy, ethics, ideology, geopolitics and European politics, through a fast text floor, live voice chats, and a book club.</p></details>
-    <details><summary>Is it free to join?</summary><p>Yes, completely free. Click a join link, complete the short onboarding, and you are in.</p></details>
-    <details><summary>Do I need to be an expert in philosophy?</summary><p>No. Members range from curious newcomers to the well-read. Good-faith interest matters more than credentials.</p></details>
-    <details><summary>What can I discuss?</summary><p>Political philosophy, ethics, ideology, Marxism, liberalism and conservatism, geopolitics, current events, European politics, history, and religion.</p></details>
-    <details><summary>How active are the voice chats?</summary><p>Voice channels run most nights, with open conversations on ethics, ideology and current events that carry over into text. The live count is on the widget above.</p></details>
-    <details><summary>How do the ranks work?</summary><p>You climb a tenure-gated ladder by showing up and contributing over time, not by grinding messages, so ranks reflect real participation.</p></details>
-    <details><summary>Is it a left-wing or right-wing server?</summary><p>Neither by rule. It leans free-speech and European and hosts the full spectrum. The point is to think through positions in good faith, not to enforce one.</p></details>
+  <section class="band alt" id="faq">
+    <div data-reveal><span class="kicker">FAQ</span><h2>Frequently asked questions</h2></div>
+    <div data-stagger>
+      <details data-reveal><summary>What is the Politics &amp; Philosophy Discord server?</summary><p>A free-speech Discord community of 1,100+ members for political philosophy, ethics, ideology, geopolitics and European politics, across a fast text floor, live voice chats and a book club.</p></details>
+      <details data-reveal><summary>Is it free to join?</summary><p>Yes, completely free. Click a join link, finish the short onboarding, and you are in.</p></details>
+      <details data-reveal><summary>Do I need to be an expert in philosophy?</summary><p>No. Members range from curious newcomers to the very well read. Good faith matters more than credentials.</p></details>
+      <details data-reveal><summary>What can I discuss?</summary><p>Political philosophy, ethics, ideology, Marxism, liberalism and conservatism, geopolitics, current events, European politics, history and religion.</p></details>
+      <details data-reveal><summary>Can I make my own voice channel?</summary><p>Yes. Any member can open a voice room and run it: rename it, cap the size, lock it, mute, kick or ban, and hand it to someone else. Fifteen commands, no moderator required.</p></details>
+      <details data-reveal><summary>How active are the voice chats?</summary><p>Voice runs most nights, on ethics, ideology and current events, and the conversation carries into text afterwards. The live count is on the widget above.</p></details>
+      <details data-reveal><summary>How do the ranks work?</summary><p>You climb a tenure-gated ladder by showing up and contributing over time, not by grinding messages, so a rank reflects real participation.</p></details>
+      <details data-reveal><summary>Is it a left-wing or right-wing server?</summary><p>Neither by rule. It leans free-speech and European and hosts the full spectrum. The point is to think a position through in good faith, not to enforce one.</p></details>
+    </div>
   </section>
 </main>
 
