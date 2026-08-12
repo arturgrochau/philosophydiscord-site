@@ -69,6 +69,9 @@
   var rot = document.querySelector('.rot');
   if (rot && !reduce) {
     var words = rot.children, cur = 0;
+    // hand the first word over to the .on class, so it fades out like every other one
+    rot.classList.add('live');
+    words[0].classList.add('on');
     setInterval(function () {
       words[cur].classList.remove('on');
       words[cur].classList.add('out');
@@ -77,7 +80,6 @@
       cur = (cur + 1) % words.length;
       words[cur].classList.add('on');
     }, 2600);
-    words[0].classList.add('on');
   }
 
   /* ---- pointer spotlight on cards ---- */

@@ -120,7 +120,8 @@ h1 .grad{
 /* rotating topic */
 .rot{display:inline-grid; vertical-align:bottom; text-align:left}
 .rot span{grid-area:1/1; color:#fff; font-weight:600; opacity:0; transform:translateY(.45em); transition:opacity .4s, transform .4s}
-.rot span:first-child,.rot span.on{opacity:1; transform:none}
+/* until the script takes over (no JS, or reduced motion) the first word stands in as static text */
+.rot:not(.live) span:first-child,.rot span.on{opacity:1; transform:none}
 .rot span.out{opacity:0; transform:translateY(-.45em)}
 
 /* stats */
