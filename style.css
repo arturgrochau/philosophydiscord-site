@@ -32,8 +32,8 @@ strong{color:#fff}
 /* hero */
 .hero{
   background:
-    radial-gradient(1200px 500px at 15% -10%, rgba(47,107,255,.28), transparent 60%),
-    radial-gradient(1000px 500px at 100% 0%, rgba(220,38,38,.22), transparent 55%),
+    linear-gradient(rgba(11,14,26,.80), rgba(11,14,26,.94)),
+    url('/hero-bg.jpg') center 32% / cover no-repeat,
     var(--panel2);
   border-bottom:1px solid var(--line);
 }
