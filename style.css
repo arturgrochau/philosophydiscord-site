@@ -327,6 +327,10 @@ details p{color:var(--muted); margin:0 0 15px}
 .srv-list .server::before{margin-top:2px}
 .srv-meta{margin:0 0 .6em !important; font-size:.88rem !important; color:var(--muted) !important}
 .srv-meta b{color:#fff; font-variant-numeric:tabular-nums}
+.srv-note{
+  border-left:3px solid var(--line2); padding:.1em 0 .1em 18px; margin:1.5em 0;
+  color:var(--muted); font-size:.95rem;
+}
 .tag.warn{background:var(--red)}
 .article code{
   font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.86em;
