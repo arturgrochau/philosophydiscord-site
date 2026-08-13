@@ -319,3 +319,18 @@ details p{color:var(--muted); margin:0 0 15px}
   .js [data-reveal]{opacity:1; transform:none}
   .ticker-track{animation:none}
 }
+
+/* ---------- verified server guide ---------- */
+.srv-list{counter-reset:s}
+.srv-list .server{align-items:flex-start}
+.srv-list .server > div{flex:1 1 0; min-width:0}
+.srv-list .server::before{margin-top:2px}
+.srv-meta{margin:0 0 .6em !important; font-size:.88rem !important; color:var(--muted) !important}
+.srv-meta b{color:#fff; font-variant-numeric:tabular-nums}
+.tag.warn{background:var(--red)}
+.article code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.86em;
+  background:rgba(18,23,52,.9); border:1px solid var(--line); border-radius:5px; padding:.1em .4em; color:var(--ink);
+  overflow-wrap:anywhere;
+}
+.foot .disclaimer{margin-top:1.4em; font-size:.82rem; opacity:.65; max-width:64ch; margin-inline:auto}
